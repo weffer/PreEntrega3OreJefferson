@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "nombre": "ESCRITORIO QUADRA",
+    "descripcion": "Quadra no es solo un escritorio es un estilo en tu espacio de trabajo, sus múltiples colores de estructura y tablero te permitirán personalizar tu espacio a tu gusto y estilo",
+    "precio": 150.0,
+    "imagen": "../img/producto1.jpg",
+    "galeria": [
+      "../img/producto4.jpg",
+      "../img/producto10.jpg",
+      "../img/producto5.jpg",
+      "../img/producto7.jpg"
+    ],
+    "titulo": "Características Sit and Stand escritorio de altura regulable",
+    "caracteristicas": [
+      "Sit and Stand – escritorio de altura regulable, exclusivo de VISSO, se diferencia de otros modelos similares por su doble motor eléctrico con bajo nivel de ruido (>50db) que soportan hasta 120 kg. El producto cuenta con sensor de proximidad y 05 años de garantía.",
+      "Ponemos a tu disposición 72 combinaciones posibles de escritorio: 06 tamaños de tablero, 04 colores de tablero y 03 colores de estructura."
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Sit And Stand Escritorio De Altura",
+    "descripcion": "De pie y sentado, la fórmula de éxito para una forma más sana de trabajar. Sit and Stand escritorio de altura regulable cuida tu salud mientras trabajas",
+    "precio": 120.0,
+    "imagen": "../img/producto2.jpg",
+    "galeria": [
+      "../img/producto1.jpg",
+      "../img/producto11.jpg",
+      "../img/producto4.jpg",
+      "../img/producto3.jpg"
+    ],
+    "titulo": "Características Sit and Stand escritorio de altura regulable",
+    "caracteristicas": [
+      "Sit and Stand – escritorio de altura regulable, exclusivo de VISSO, se diferencia de otros modelos similares por su doble motor eléctrico con bajo nivel de ruido (>50db) que soportan hasta 120 kg. El producto cuenta con sensor de proximidad y 05 años de garantía.",
+      "Ponemos a tu disposición 72 combinaciones posibles de escritorio: 06 tamaños de tablero, 04 colores de tablero y 03 colores de estructura."
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Escritorio Quadra En L",
+    "descripcion": "Su amplio tablero principal y su tablero lateral hacen que el Escritorio en L modelo Quadra aporte una sensación de orden, aprovechando al máximo el espacio donde se encuentre",
+    "precio": 100.0,
+    "imagen": "../img/producto3.jpg",
+    "galeria": [
+      "../img/producto2.jpg",
+      "../img/producto8.jpg",
+      "../img/producto12.jpg",
+      "../img/producto6.jpg"
+    ],
+    "titulo": "Características Sit and Stand escritorio de altura regulable",
+    "caracteristicas": [
+      "Sit and Stand – escritorio de altura regulable, exclusivo de VISSO, se diferencia de otros modelos similares por su doble motor eléctrico con bajo nivel de ruido (>50db) que soportan hasta 120 kg. El producto cuenta con sensor de proximidad y 05 años de garantía.",
+      "Ponemos a tu disposición 72 combinaciones posibles de escritorio: 06 tamaños de tablero, 04 colores de tablero y 03 colores de estructura."
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "ESCRITORIO QUADRA",
+    "descripcion": "Quadra no es solo un escritorio es un estilo en tu espacio de trabajo, sus múltiples colores de estructura y tablero te permitirán personalizar tu espacio a tu gusto y estilo.",
+    "precio": 150.0,
+    "imagen": "../img/producto4.jpg",
+    "galeria": [
+      "../img/producto2.jpg",
+      "../img/producto10.jpg",
+      "../img/producto3.jpg",
+      "../img/producto11.jpg"
+    ],
+    "titulo": "Características Sit and Stand escritorio de altura regulable",
+    "caracteristicas": [
+      "Sit and Stand – escritorio de altura regulable, exclusivo de VISSO, se diferencia de otros modelos similares por su doble motor eléctrico con bajo nivel de ruido (>50db) que soportan hasta 120 kg. El producto cuenta con sensor de proximidad y 05 años de garantía.",
+      "Ponemos a tu disposición 72 combinaciones posibles de escritorio: 06 tamaños de tablero, 04 colores de tablero y 03 colores de estructura."
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "ESCRITORIO ASTER",
+    "descripcion": "Escritorio Aster es un escritorio de diseño moderno que transmite personalidad, calma y creatividad al espacio de trabajo. Con sus 90 posibles combinaciones de acabados y tamaños esta diseñado para adaptarse a diferentes espacios.",
+    "precio": 150.0,
+    "imagen": "../img/producto5.jpg",
+    "galeria": [
+      "../img/producto4.jpg",
+      "../img/producto10.jpg",
+      "../img/producto5.jpg",
+      "../img/producto7.jpg"
+    ],
+    "titulo": "Características Sit and Stand escritorio de altura regulable",
+    "caracteristicas": [
+      "Sit and Stand – escritorio de altura regulable, exclusivo de VISSO, se diferencia de otros modelos similares por su doble motor eléctrico con bajo nivel de ruido (>50db) que soportan hasta 120 kg. El producto cuenta con sensor de proximidad y 05 años de garantía.",
+      "Ponemos a tu disposición 72 combinaciones posibles de escritorio: 06 tamaños de tablero, 04 colores de tablero y 03 colores de estructura."
+    ]
+  },
+  {
+    "id": 6,
+    "nombre": "ESCRITORIO ÁBACO",
+    "descripcion": "Escritorio Abaco: imponente, moderno y versátil. La solidez visual de su estructura hacen de Ábaco un escritorio imponente que marca presencia y puede adaptarse a cualquier espacio.",
+    "precio": 150.0,
+    "imagen": "../img/producto6.jpg",
+    "galeria": [
+      "../img/producto6.jpg",
+      "../img/producto8.jpg",
+      "../img/producto3.jpg",
+      "../img/producto9.jpg"
+    ],
+    "titulo": "Características Sit and Stand escritorio de altura regulable",
+    "caracteristicas": [
+      "Sit and Stand – escritorio de altura regulable, exclusivo de VISSO, se diferencia de otros modelos similares por su doble motor eléctrico con bajo nivel de ruido (>50db) que soportan hasta 120 kg. El producto cuenta con sensor de proximidad y 05 años de garantía.",
+      "Ponemos a tu disposición 72 combinaciones posibles de escritorio: 06 tamaños de tablero, 04 colores de tablero y 03 colores de estructura."
+    ]
+  },
+  {
+    "id": 7,
+    "nombre": "ESCRITORIO TERRA",
+    "descripcion": "Espacio Reducido? El Escritorio Terra es la solución. Su diseño único Optimiza tu espacio, ya que incluye una repisa aerea para maximizar el almacenamiento sin ocupar espacio extra. Funcionalidad y estilo en uno solo.",
+    "precio": 150.0,
+    "imagen": "../img/producto7.jpg",
+    "galeria": [
+      "../img/producto11.jpg",
+      "../img/producto7.jpg",
+      "../img/producto5.jpg",
+      "../img/producto2.jpg"
+    ],
+    "titulo": "Características Sit and Stand escritorio de altura regulable",
+    "caracteristicas": [
+      "Sit and Stand – escritorio de altura regulable, exclusivo de VISSO, se diferencia de otros modelos similares por su doble motor eléctrico con bajo nivel de ruido (>50db) que soportan hasta 120 kg. El producto cuenta con sensor de proximidad y 05 años de garantía.",
+      "Ponemos a tu disposición 72 combinaciones posibles de escritorio: 06 tamaños de tablero, 04 colores de tablero y 03 colores de estructura."
+    ]
+  },
+  {
+    "id": 8,
+    "nombre": "ESCRITORIO GERENCIAL FOCUS",
+    "descripcion": "Escritorio Gerencial diseñado con un concepto clásico pero a la vez moderno y tecnológico. Focus es ideal para ejecutivos que necesiten un ambiente acogedor pero a la vez elegante e imponente.",
+    "precio": 150.0,
+    "imagen": "../img/producto8.jpg",
+    "galeria": [
+      "../img/producto4.jpg",
+      "../img/producto10.jpg",
+      "../img/producto5.jpg",
+      "../img/producto7.jpg"
+    ],
+    "titulo": "Características Sit and Stand escritorio de altura regulable",
+    "caracteristicas": [
+      "Sit and Stand – escritorio de altura regulable, exclusivo de VISSO, se diferencia de otros modelos similares por su doble motor eléctrico con bajo nivel de ruido (>50db) que soportan hasta 120 kg. El producto cuenta con sensor de proximidad y 05 años de garantía.",
+      "Ponemos a tu disposición 72 combinaciones posibles de escritorio: 06 tamaños de tablero, 04 colores de tablero y 03 colores de estructura."
+    ]
+  },
+  {
+    "id": 9,
+    "nombre": "ESCRITORIO GERENCIAL ABACO",
+    "descripcion": "Diseño moderno y cálido, que junto con su credenza lateral flotante hace que todo lo importante este en orden y a tu alcance.",
+    "precio": 150.0,
+    "imagen": "../img/producto9.jpg",
+    "galeria": [
+      "../img/producto3.jpg",
+      "../img/producto4.jpg",
+      "../img/producto2.jpg",
+      "../img/producto10.jpg"
+    ],
+    "titulo": "Características Sit and Stand escritorio de altura regulable",
+    "caracteristicas": [
+      "Sit and Stand – escritorio de altura regulable, exclusivo de VISSO, se diferencia de otros modelos similares por su doble motor eléctrico con bajo nivel de ruido (>50db) que soportan hasta 120 kg. El producto cuenta con sensor de proximidad y 05 años de garantía.",
+      "Ponemos a tu disposición 72 combinaciones posibles de escritorio: 06 tamaños de tablero, 04 colores de tablero y 03 colores de estructura."
+    ]
+  },
+  {
+    "id": 10,
+    "nombre": "ESCRITORIO GERENCIAL ASTER",
+    "descripcion": "scritorio Gerencial Aster: Diseño moderno, espacioso y funcional. Transforma tu oficina con Aster Gerencial. Su diseño moderno incluye un amplio espacio de almacenamiento para una organización perfecta de sus archivos y otros elementos esenciales.",
+    "precio": 150.0,
+    "imagen": "../img/producto10.jpg",
+    "galeria": [
+      "../img/producto4.jpg",
+      "../img/producto10.jpg",
+      "../img/producto5.jpg",
+      "../img/producto7.jpg"
+    ],
+    "titulo": "Características Sit and Stand escritorio de altura regulable",
+    "caracteristicas": [
+      "Sit and Stand – escritorio de altura regulable, exclusivo de VISSO, se diferencia de otros modelos similares por su doble motor eléctrico con bajo nivel de ruido (>50db) que soportan hasta 120 kg. El producto cuenta con sensor de proximidad y 05 años de garantía.",
+      "Ponemos a tu disposición 72 combinaciones posibles de escritorio: 06 tamaños de tablero, 04 colores de tablero y 03 colores de estructura."
+    ]
+  },
+  {
+    "id": 11,
+    "nombre": "ESCRITORIO GERENCIAL QUADRA",
+    "descripcion": "Escritorio Gerencial de diseño moderno y sofisticado. Transforma tu oficina con la línea Quadra Gerencial. Su diseño moderno incluye una amplia credenza lateral de almacenamiento para una organización perfecta de sus archivos y otros elementos esenciales.",
+    "precio": 150.0,
+    "imagen": "../img/producto11.jpg",
+    "galeria": [
+      "../img/producto9.jpg",
+      "../img/producto5.jpg",
+      "../img/producto3.jpg",
+      "../img/producto12.jpg"
+    ],
+    "titulo": "Características Sit and Stand escritorio de altura regulable",
+    "caracteristicas": [
+      "Sit and Stand – escritorio de altura regulable, exclusivo de VISSO, se diferencia de otros modelos similares por su doble motor eléctrico con bajo nivel de ruido (>50db) que soportan hasta 120 kg. El producto cuenta con sensor de proximidad y 05 años de garantía.",
+      "Ponemos a tu disposición 72 combinaciones posibles de escritorio: 06 tamaños de tablero, 04 colores de tablero y 03 colores de estructura."
+    ]
+  },
+  {
+    "id": 12,
+    "nombre": "ESCRITORIO QUADRA EN L",
+    "descripcion": "Su amplio tablero principal y su tablero lateral hacen que el Escritorio en L modelo Quadra aporte una sensación de orden, aprovechando al máximo el espacio donde se encuentre.",
+    "precio": 150.0,
+    "imagen": "../img/producto12.jpg",
+    "galeria": [
+      "../img/producto4.jpg",
+      "../img/producto10.jpg",
+      "../img/producto5.jpg",
+      "../img/producto7.jpg"
+    ],
+    "titulo": "Características Sit and Stand escritorio de altura regulable",
+    "caracteristicas": [
+      "Sit and Stand – escritorio de altura regulable, exclusivo de VISSO, se diferencia de otros modelos similares por su doble motor eléctrico con bajo nivel de ruido (>50db) que soportan hasta 120 kg. El producto cuenta con sensor de proximidad y 05 años de garantía.",
+      "Ponemos a tu disposición 72 combinaciones posibles de escritorio: 06 tamaños de tablero, 04 colores de tablero y 03 colores de estructura."
+    ]
+  }
+]
