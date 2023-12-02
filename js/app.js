@@ -210,28 +210,52 @@ function fnVerCarrito() {
                     </div>`;
 
     document.querySelector("#carrito").innerHTML = carritoHTML;
+    detalleCarrito(lstCarrito.productos);
 
     //Agregar evento al checkbox
     let checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
+    //recorrer los input checkbox
     checkboxes.forEach(function (checkbox) {
       checkbox.addEventListener("change", function (event) {
         let idChecked = [];
+        //Para obtener los checbox que tiene checked
         document
           .querySelectorAll('input[type="checkbox"]:checked')
           .forEach(function (checkbox) {
             let id = checkbox.getAttribute("data-id");
             idChecked.push(Number(id));
           });
-
+        //Obtener la lista que contenga los checked
         let lstChecked = lstCarrito.productos.filter((carrito) =>
           idChecked.includes(carrito.id)
         );
 
         let total = carritoTotalPrecio(lstChecked);
         document.querySelector("#total").innerHTML = total;
+        detalleCarrito(lstChecked);
       });
     });
+
+    //Para poner en los productos seleccionados y total
+    function detalleCarrito(lstChecked) {
+      let detalleHTML = "";
+      if (lstChecked.length > 0) {
+        detalleHTML = `<p class="text-center">
+                            Subotal(${
+                              lstChecked.length
+                            } producto(s)):<strong>$${
+          document.querySelector("#total").innerHTML
+        }</strong>
+                        </p>`;
+
+        detalleHTML +=
+          '<div class="text-center"><button class="bg-primary text-center p-2 text-uppercase text-decoration-none text-white btn-prod">Proceder al pago</button></div>';
+      } else {
+        detalleHTML = `<h5 class="text-center">no hay productos seleccionados</h5>`;
+      }
+      document.querySelector("#detalleCarrito").innerHTML = detalleHTML;
+    }
   }
 }
 
