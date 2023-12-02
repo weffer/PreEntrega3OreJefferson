@@ -189,7 +189,7 @@ function fnVerCarrito() {
                             carrito.id
                           }"/>
                         </div>                        
-                        <img src="${carrito.imagen}" alt="Producto 1" />
+                        <img src="../${carrito.imagen}" alt="Producto 1" />
                         <p class="p-2">${carrito.descripcion}</p>
                         <div>
                           <h5>${carrito.nombre}</h5>
