@@ -39,7 +39,7 @@
     "id": 3,
     "nombre": "Escritorio Quadra En L",
     "descripcion": "Su amplio tablero principal y su tablero lateral hacen que el Escritorio en L modelo Quadra aporte una sensación de orden, aprovechando al máximo el espacio donde se encuentre",
-    "precio": 100.0,
+    "precio": 125.0,
     "imagen": "img/producto3.jpg",
     "galeria": [
       "../img/producto2.jpg",
@@ -57,7 +57,7 @@
     "id": 4,
     "nombre": "ESCRITORIO QUADRA",
     "descripcion": "Quadra no es solo un escritorio es un estilo en tu espacio de trabajo, sus múltiples colores de estructura y tablero te permitirán personalizar tu espacio a tu gusto y estilo.",
-    "precio": 150.0,
+    "precio": 350.0,
     "imagen": "img/producto4.jpg",
     "galeria": [
       "../img/producto2.jpg",
@@ -75,7 +75,7 @@
     "id": 5,
     "nombre": "ESCRITORIO ASTER",
     "descripcion": "Escritorio Aster es un escritorio de diseño moderno que transmite personalidad, calma y creatividad al espacio de trabajo. Con sus 90 posibles combinaciones de acabados y tamaños esta diseñado para adaptarse a diferentes espacios.",
-    "precio": 150.0,
+    "precio": 80.0,
     "imagen": "img/producto5.jpg",
     "galeria": [
       "../img/producto4.jpg",
@@ -93,7 +93,7 @@
     "id": 6,
     "nombre": "ESCRITORIO ÁBACO",
     "descripcion": "Escritorio Abaco: imponente, moderno y versátil. La solidez visual de su estructura hacen de Ábaco un escritorio imponente que marca presencia y puede adaptarse a cualquier espacio.",
-    "precio": 150.0,
+    "precio": 90.0,
     "imagen": "img/producto6.jpg",
     "galeria": [
       "../img/producto6.jpg",
@@ -111,7 +111,7 @@
     "id": 7,
     "nombre": "ESCRITORIO TERRA",
     "descripcion": "Espacio Reducido? El Escritorio Terra es la solución. Su diseño único Optimiza tu espacio, ya que incluye una repisa aerea para maximizar el almacenamiento sin ocupar espacio extra. Funcionalidad y estilo en uno solo.",
-    "precio": 150.0,
+    "precio": 550.0,
     "imagen": "img/producto7.jpg",
     "galeria": [
       "../img/producto11.jpg",
@@ -129,7 +129,7 @@
     "id": 8,
     "nombre": "ESCRITORIO GERENCIAL FOCUS",
     "descripcion": "Escritorio Gerencial diseñado con un concepto clásico pero a la vez moderno y tecnológico. Focus es ideal para ejecutivos que necesiten un ambiente acogedor pero a la vez elegante e imponente.",
-    "precio": 150.0,
+    "precio": 110.0,
     "imagen": "img/producto8.jpg",
     "galeria": [
       "../img/producto4.jpg",
@@ -147,7 +147,7 @@
     "id": 9,
     "nombre": "ESCRITORIO GERENCIAL ABACO",
     "descripcion": "Diseño moderno y cálido, que junto con su credenza lateral flotante hace que todo lo importante este en orden y a tu alcance.",
-    "precio": 150.0,
+    "precio": 220.0,
     "imagen": "img/producto9.jpg",
     "galeria": [
       "../img/producto3.jpg",
@@ -165,7 +165,7 @@
     "id": 10,
     "nombre": "ESCRITORIO GERENCIAL ASTER",
     "descripcion": "scritorio Gerencial Aster: Diseño moderno, espacioso y funcional. Transforma tu oficina con Aster Gerencial. Su diseño moderno incluye un amplio espacio de almacenamiento para una organización perfecta de sus archivos y otros elementos esenciales.",
-    "precio": 150.0,
+    "precio": 75.0,
     "imagen": "img/producto10.jpg",
     "galeria": [
       "../img/producto4.jpg",
@@ -183,7 +183,7 @@
     "id": 11,
     "nombre": "ESCRITORIO GERENCIAL QUADRA",
     "descripcion": "Escritorio Gerencial de diseño moderno y sofisticado. Transforma tu oficina con la línea Quadra Gerencial. Su diseño moderno incluye una amplia credenza lateral de almacenamiento para una organización perfecta de sus archivos y otros elementos esenciales.",
-    "precio": 150.0,
+    "precio": 85.0,
     "imagen": "img/producto11.jpg",
     "galeria": [
       "../img/producto9.jpg",
@@ -201,7 +201,7 @@
     "id": 12,
     "nombre": "ESCRITORIO QUADRA EN L",
     "descripcion": "Su amplio tablero principal y su tablero lateral hacen que el Escritorio en L modelo Quadra aporte una sensación de orden, aprovechando al máximo el espacio donde se encuentre.",
-    "precio": 150.0,
+    "precio": 500.0,
     "imagen": "img/producto12.jpg",
     "galeria": [
       "../img/producto4.jpg",
