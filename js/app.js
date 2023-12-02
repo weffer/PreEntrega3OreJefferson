@@ -77,6 +77,10 @@ function fnProductos() {
     lstProductos = JSON.parse(localStorage.getItem("lstProductos"));
   }
 
+  lstProductos.sort(function (a, b) {
+    return a.precio - b.precio;
+  });
+
   cargarProductos(lstProductos);
 
   //Para los filtros y eventos
