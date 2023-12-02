@@ -94,7 +94,7 @@
     "nombre": "ESCRITORIO ÁBACO",
     "descripcion": "Escritorio Abaco: imponente, moderno y versátil. La solidez visual de su estructura hacen de Ábaco un escritorio imponente que marca presencia y puede adaptarse a cualquier espacio.",
     "precio": 150.0,
-    "imagen": "../img/producto6.jpg",
+    "imagen": "img/producto6.jpg",
     "galeria": [
       "../img/producto6.jpg",
       "../img/producto8.jpg",
