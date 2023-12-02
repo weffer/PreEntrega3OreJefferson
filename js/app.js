@@ -19,7 +19,7 @@ function fnInicio() {
   function obtenerProductos() {
     return new Promise((resolve, reject) => {
       // Realizar la solicitud fetch al archivo JSON
-      fetch("../data/data.json")
+      fetch("data/data.json")
         .then((response) => {
           // Verificar si la respuesta es exitosa (código de estado 200-299)
           if (!response.ok) {
