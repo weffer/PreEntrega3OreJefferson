@@ -30,8 +30,7 @@ function funcionalidadPaginas(
 
   //Para obtener la ruta en donde nos encontramos
   let ruta = window.location.pathname;
-  if ((ruta.includes("/") && ruta.length < 2) || ruta.includes("/index"))
-    fnInicio();
+  if (!ruta.includes(".html") || ruta.includes("/index")) fnInicio();
   else if (ruta.includes("/productos")) fnProductos();
   else if (ruta.includes("/verCarrito")) fnVerCarrito();
   else if (ruta.includes("/verProducto")) fnVerProducto();
