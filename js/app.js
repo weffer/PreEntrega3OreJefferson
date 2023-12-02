@@ -95,7 +95,7 @@ function fnProductos() {
                           <div class="col-4">
                             <img
                             class="img-fluid producto"
-                            src="${producto.imagen}"
+                            src="../${producto.imagen}"
                             alt="producto de ${producto.nombre}"/>
                           </div>
                           <div class="col-8 d-flex flex-column">
