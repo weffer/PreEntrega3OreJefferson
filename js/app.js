@@ -202,7 +202,7 @@ function fnVerCarrito() {
                           </div>
                         </div>
                         <div class="col-auto">
-                          <img class='img-fluid producto' src=../'${
+                          <img class='img-fluid producto' src=../${
                             carrito.imagen
                           }' alt='${carrito.nombre}'/>
                         </div>
