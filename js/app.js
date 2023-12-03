@@ -271,7 +271,43 @@ function fnVerCarrito() {
                         </p>`;
 
         detalleHTML +=
-          '<div class="text-center"><button class="bg-primary text-center p-2 text-uppercase text-decoration-none text-white btn-prod">Proceder al pago</button></div>';
+          '<div class="text-center"><button class="bg-primary text-center p-2 text-uppercase text-decoration-none text-white btn-prod" data-bs-toggle="modal" data-bs-target="#paymentModal">Proceder al pago</button></div>';
+
+        document
+          .querySelector("#btnProcesarPago")
+          .addEventListener("click", fnProcesar);
+
+        function fnProcesar() {
+          let creditCard = document.querySelector("#creditCard").value;
+          let cardHolder = document.querySelector("#cardHolder").value;
+          let errorCreditCard = document.querySelector("#errorCreditCard");
+          let errorCardHolder = document.querySelector("#errorCardHolder");
+
+          if (creditCard.trim() === "") {
+            errorCreditCard.textContent =
+              "El campo Tarjeta de Crédito no puede estar vacío";
+            return;
+          } else {
+            errorCreditCard.textContent = "";
+          }
+
+          if (cardHolder.trim() === "") {
+            errorCardHolder.textContent =
+              "El campo Titular de la Tarjeta no puede estar vacío";
+            return;
+          } else {
+            errorCardHolder.textContent = "";
+          }
+          let paymentModal = new bootstrap.Modal(
+            document.getElementById("paymentModal")
+          );
+          paymentModal._hideModal();
+          let modalBackdrop =
+            document.getElementsByClassName("modal-backdrop")[0];
+          modalBackdrop.parentNode.removeChild(modalBackdrop);
+          alert("Se proceso el pago");
+          crearCoffeti();
+        }
       } else {
         detalleHTML = `<h5 class="text-center">no hay productos seleccionados</h5>`;
       }
