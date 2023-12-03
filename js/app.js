@@ -44,20 +44,26 @@ function fnInicio() {
   function cargarProductos(productos) {
     let productosHTML = "";
     productos.forEach(function (producto) {
-      productosHTML += `<div class='col-md-6 col-lg-4 my-4 row'>
-                            <div class='col-4'>
-                                <img class='img-fluid producto' src='${producto.imagen}' alt='${producto.nombre}'/>
-                            </div>
-                            <div class='col-8 d-flex flex-column'>
-                                <h3 class='text-black fs-5 fw-bold text-uppercase'>
-                                    ${producto.nombre}
-                                </h3>
-                                <p class='flex-grow-1'>
-                                    ${producto.descripcion}
-                                </p>
-                                <p class='fs-3 text-black'>$${producto.precio}</p>
-                                <a class='d-block bg-primary text-center p-2 text-uppercase text-decoration-none text-white btn-prod' href='paginas/verProducto.html?id=${producto.id}'>Ver Producto</a>
-                            </div>
+      productosHTML += `<div class="col-md-6 col-lg-4 my-4 row">
+                          <div class="col-4">
+                            <img
+                            class="img-fluid producto"
+                            src="../${producto.imagen}"
+                            alt="producto de ${producto.nombre}"/>
+                          </div>
+                          <div class="col-8 d-flex flex-column">
+                            <h3 class="text-black fs-5 fw-bold text-uppercase">
+                              ${producto.nombre}
+                            </h3>
+                            <p class="flex-grow-1">
+                              ${producto.descripcion}
+                            </p>
+                            <p class="fs-3 text-black">$${producto.precio}</p>
+                            <a
+                              class="d-block bg-primary text-center p-2 text-uppercase text-decoration-none text-white btn-prod"
+                              href="../paginas/verProducto.html?id=${producto.id}"
+                              >Ver Producto</a>
+                          </div>
                         </div>`;
     });
 
@@ -187,25 +193,36 @@ function fnVerCarrito() {
   let carritoHTML = "";
   if (lstCarrito.productos.length > 0) {
     lstCarrito.productos.forEach(function (carrito) {
-      carritoHTML += `<div class="carrito d-flex align-items-center">
-                        <div class="p-2">
-                          <input type="checkbox" checked data-id="${
-                            carrito.id
-                          }"/>
-                        </div>                        
-                        <img src="../${carrito.imagen}" alt="Producto 1" />
-                        <p class="p-2">${carrito.descripcion}</p>
-                        <div>
+      carritoHTML += `<div class="row carrito align-items-center">
+                        <div class="col-auto">
+                          <div class="p-2">
+                            <input type="checkbox" checked="" data-id="${
+                              carrito.id
+                            }"/>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <img class='img-fluid producto' src='${
+                            carrito.imagen
+                          }' alt='${carrito.nombre}'/>
+                        </div>
+                        <div class="col h-100">
+                          <p class="p-2 overflow-auto">${
+                            carrito.descripcion
+                          }</p>
+                        </div>
+                        <div class="col">
                           <h5>${carrito.nombre}</h5>
                           <p>Precio: $${carrito.precio}</p>
-                          <p>Cantidad: ${carrito.cantidad}</p>
+                          <p>Cantidad: ${carrito.cantidad}</p
+                          <p>$${carrito.cantidad * carrito.precio}</p
                         </div>
-                        <div class="p-2">
-                          ${carrito.cantidad * carrito.precio}
+                          <div class="col-auto">
+                            <span class="eliminar">
+                              <i class="bi bi-trash"></i>
+                            </span>
+                          </div>
                         </div>
-                        <span class="eliminar">
-                          <i class="bi bi-trash"></i>
-                        </span>
                       </div>`;
     });
 
