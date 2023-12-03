@@ -48,7 +48,7 @@ function fnInicio() {
                           <div class="col-4">
                             <img
                             class="img-fluid producto"
-                            src="../${producto.imagen}"
+                            src="${producto.imagen}"
                             alt="producto de ${producto.nombre}"/>
                           </div>
                           <div class="col-8 d-flex flex-column">
@@ -61,7 +61,7 @@ function fnInicio() {
                             <p class="fs-3 text-black">$${producto.precio}</p>
                             <a
                               class="d-block bg-primary text-center p-2 text-uppercase text-decoration-none text-white btn-prod"
-                              href="../paginas/verProducto.html?id=${producto.id}"
+                              href="paginas/verProducto.html?id=${producto.id}"
                               >Ver Producto</a>
                           </div>
                         </div>`;
