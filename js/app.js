@@ -217,10 +217,12 @@ function fnVerCarrito() {
                           <p>Cantidad: ${carrito.cantidad}</p
                           <p>$${carrito.cantidad * carrito.precio}</p
                         </div>
-                          <div class="col-auto">
-                            <span class="eliminar">
-                              <i class="bi bi-trash"></i>
-                            </span>
+                          <div class="col-auto">                            
+                              <a href="javascript:void(0);" class="deleteCard" data-id="${
+                                carrito.id
+                              }">
+                                <i class="bi bi-trash eliminar"></i>
+                              </a>                            
                           </div>
                         </div>
                       </div>`;
@@ -313,6 +315,42 @@ function fnVerCarrito() {
       }
       document.querySelector("#detalleCarrito").innerHTML = detalleHTML;
     }
+
+    //Agregar evento de eliminar
+    let deleteCardLinks = document.querySelectorAll(".deleteCard");
+
+    deleteCardLinks.forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        debugger;
+        let dataId = link.getAttribute("data-id");
+        console.log("Clic en el enlace con data-id: " + dataId);
+        //event.preventDefault();
+        const indice = lstCarrito.productos.findIndex(
+          (producto) => producto.id === Number(dataId)
+        );
+        lstCarrito.productos.splice(Number(indice), 1);
+
+        const cantidadTotal = lstCarrito.productos.reduce(
+          (acumulador, producto) => acumulador + producto.cantidad,
+          0
+        );
+
+        lstCarrito.cantidad = Number(cantidadTotal);
+
+        localStorage.setItem("lstCarrito", JSON.stringify(lstCarrito));
+        showNotification(`Se elimino el producto del carrito de compras`);
+        funcionalidadPaginas(
+          fnInicio,
+          fnProductos,
+          fnVerCarrito,
+          fnVerProducto
+        );
+      });
+    });
+  } else {
+    document.querySelector("#carrito").innerHTML =
+      "<h5>No hay productos en el carrito</h5>";
+    document.querySelector("#detalleCarrito").innerHTML = "";
   }
 }
 
@@ -493,10 +531,11 @@ function fnVerProducto() {
       localStorage.setItem("lstCarrito", JSON.stringify(lstCarrito));
 
       //Para mostrar una notificacion que se agrego correctamente el producto
-      alert(
-        `Se agrego correctamente el producto:\nNombre: ${
-          productoAdd.nombre
-        }\nCantidad: ${Number(document.querySelector("#cboCantidad").value)}`
+      showNotification(
+        `Se agrego al producto:\nNombre: ${productoAdd.nombre}
+                        \nCantidad: ${Number(
+                          document.querySelector("#cboCantidad").value
+                        )}`
       );
 
       crearCoffeti();
