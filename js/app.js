@@ -5,40 +5,18 @@ funcionalidadPaginas(fnInicio, fnProductos, fnVerCarrito, fnVerProducto);
 
 function fnInicio() {
   console.log("inicio");
+  obtenerProductos();
 
-  obtenerProductos()
-    .then((productos) => {
-      let lstProductos = productos;
-      console.table(lstProductos);
-      cargarProductos(lstProductos);
-    })
-    .catch((error) => {
-      console.error("Error al obtener los datos:", error);
-    });
-
-  function obtenerProductos() {
-    return new Promise((resolve, reject) => {
-      // Realizar la solicitud fetch al archivo JSON
-      fetch("data/data.json")
-        .then((response) => {
-          // Verificar si la respuesta es exitosa (código de estado 200-299)
-          if (!response.ok) {
-            throw new Error(
-              "Error en la carga del archivo JSON: " + response.status
-            );
-          }
-          // Devolver la respuesta como JSON
-          return response.json();
-        })
-        .then((data) => {
-          // Resolver la Promise con los datos obtenidos
-          resolve(data);
-        })
-        .catch((error) => {
-          // Rechazar la Promise con el error
-          reject(error);
-        });
-    });
+  async function obtenerProductos() {
+    try {
+      const res = await fetch("data/data.json");
+      const data = await res.json();
+      console.table(data);
+      cargarProductos(data);
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   function cargarProductos(productos) {
