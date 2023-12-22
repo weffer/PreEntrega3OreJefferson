@@ -21,25 +21,25 @@ function fnInicio() {
 
   function cargarProductos(productos) {
     let productosHTML = "";
-    productos.forEach(function (producto) {
+    productos.forEach(function ({ imagen, nombre, descripcion, precio, id }) {
       productosHTML += `<div class="col-md-6 col-lg-4 my-4 row">
                           <div class="col-4">
                             <img
                             class="img-fluid producto"
-                            src="${producto.imagen}"
-                            alt="producto de ${producto.nombre}"/>
+                            src="${imagen}"
+                            alt="producto de ${nombre}"/>
                           </div>
                           <div class="col-8 d-flex flex-column">
                             <h3 class="text-black fs-5 fw-bold text-uppercase">
-                              ${producto.nombre}
+                              ${nombre}
                             </h3>
                             <p class="flex-grow-1">
-                              ${producto.descripcion}
+                              ${descripcion}
                             </p>
-                            <p class="fs-3 text-black">$${producto.precio}</p>
+                            <p class="fs-3 text-black">$${precio}</p>
                             <a
                               class="d-block bg-primary text-center p-2 text-uppercase text-decoration-none text-white btn-prod"
-                              href="paginas/verProducto.html?id=${producto.id}"
+                              href="paginas/verProducto.html?id=${id}"
                               >Ver Producto</a>
                           </div>
                         </div>`;
@@ -78,25 +78,25 @@ function fnProductos() {
   function cargarProductos(productos) {
     //Recorrer los productos
     let productosHTML = "";
-    productos.forEach(function (producto) {
+    productos.forEach(function ({ imagen, nombre, descripcion, precio, id }) {
       productosHTML += `<div class="col-md-6 col-lg-4 my-4 row">
                           <div class="col-4">
                             <img
                             class="img-fluid producto"
-                            src="../${producto.imagen}"
-                            alt="producto de ${producto.nombre}"/>
+                            src="../${imagen}"
+                            alt="producto de ${nombre}"/>
                           </div>
                           <div class="col-8 d-flex flex-column">
                             <h3 class="text-black fs-5 fw-bold text-uppercase">
-                              ${producto.nombre}
+                              ${nombre}
                             </h3>
                             <p class="flex-grow-1">
-                              ${producto.descripcion}
+                              ${descripcion}
                             </p>
-                            <p class="fs-3 text-black">$${producto.precio}</p>
+                            <p class="fs-3 text-black">$${precio}</p>
                             <a
                               class="d-block bg-primary text-center p-2 text-uppercase text-decoration-none text-white btn-prod"
-                              href="../paginas/verProducto.html?id=${producto.id}"
+                              href="../paginas/verProducto.html?id=${id}"
                               >Ver Producto</a>
                           </div>
                         </div>`;
@@ -286,6 +286,13 @@ function fnVerCarrito() {
             document.getElementsByClassName("modal-backdrop")[0];
           modalBackdrop.parentNode.removeChild(modalBackdrop);
           alert("Se proceso el pago");
+
+          if (localStorage.getItem("lstCarrito")) {
+            lstCarrito = {};
+            localStorage.removeItem("lstCarrito");
+            window.location.href = window.location.origin + "/index.html";
+          }
+
           crearCoffeti();
         }
       } else {
@@ -499,8 +506,8 @@ function fnVerProducto() {
 
       //Para sacar el total del carrito
       let total = 0;
-      lstCarrito.productos.forEach((producto) => {
-        total += producto.cantidad * producto.precio;
+      lstCarrito.productos.forEach(({ cantidad, precio }) => {
+        total += cantidad * precio;
       });
 
       lstCarrito.total = total;

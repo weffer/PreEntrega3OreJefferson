@@ -8,9 +8,9 @@ let lstCarrito = {
 //Agregando funcionalidad al boton de carrito para redireccionar a la pagina correcta dependiendo de la ruta
 let btnCarrito = document.querySelector("#btnCarrito");
 btnCarrito.addEventListener("click", function (e) {
-  if (window.location.pathname.includes("paginas"))
-    window.location.href = "verCarrito.html";
-  else window.location.href = "paginas/verCarrito.html";
+  window.location.pathname.includes("paginas")
+    ? (window.location.href = "verCarrito.html")
+    : (window.location.href = "paginas/verCarrito.html");
 });
 
 //Funcion global para separar por metodos las paginas
